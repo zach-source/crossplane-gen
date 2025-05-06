@@ -1,4 +1,4 @@
-module github.com/disaster37/crossplane-gen
+module github.com/zach-source/crossplane-gen
 
 go 1.24.0
 

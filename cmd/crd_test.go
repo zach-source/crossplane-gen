@@ -6,13 +6,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/disaster37/crossplane-gen/helper"
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
+	"github.com/zach-source/crossplane-gen/helper"
 )
 
 func TestGenerateCrd(t *testing.T) {
-
 	log.SetLevel(log.DebugLevel)
 
 	var (
@@ -70,5 +69,4 @@ func TestGenerateCrd(t *testing.T) {
 	if diff != "" {
 		assert.Fail(t, diff)
 	}
-
 }

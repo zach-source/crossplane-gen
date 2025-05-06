@@ -4,14 +4,13 @@ import (
 	"os"
 	"sort"
 
-	"github.com/disaster37/crossplane-gen/cmd"
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v2"
 	prefixed "github.com/x-cray/logrus-prefixed-formatter"
+	"github.com/zach-source/crossplane-gen/cmd"
 )
 
 func run(args []string) error {
-
 	// Logger setting
 	log.SetOutput(os.Stdout)
 
@@ -71,7 +70,6 @@ func run(args []string) error {
 	}
 
 	app.Before = func(c *cli.Context) error {
-
 		if c.Bool("debug") {
 			log.SetLevel(log.DebugLevel)
 		}
